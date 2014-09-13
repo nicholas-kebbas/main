@@ -1,0 +1,23 @@
+<div align="center">
+  <div id="contact_wrapper" class="ui tertiary form segment">
+    <h3>Send me a message</h3>
+    <%= simple_form_for @contact, :html => {:class => 'ui form attached fluid segment' } do |f| %>
+      <div class="field">
+        <label>Name<label>
+        <%= f.input :name, :required => true %>
+      </div>
+      <div class="field">
+        <label>Email<label>
+      <%= f.input :email, :required => true %>
+      </div>
+      <div class="field">
+        <label>Message<label>
+      <%= f.input :message, :as => :text, :required => true %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Send message', :class=> "ui blue submit button" %>
+      </div>
+    <% end %>
+  </div>
+</div>

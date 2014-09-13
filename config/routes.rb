@@ -1,6 +1,5 @@
 Profile::Application.routes.draw do
   resources :projects
-  	get '/contact/', to: 'projects#index'
 
   resources :mains
 
@@ -14,5 +13,7 @@ Profile::Application.routes.draw do
     get '/animated/', to: 'animations#index'
     get '/svg/', to: 'animations#new'
 
-  
+  	match '/contact',     to: 'contacts#new',             via: 'get'
+	resources "contacts", only: [:new, :create]
+
 end

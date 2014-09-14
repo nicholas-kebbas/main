@@ -1,245 +1,300 @@
- <!-- div used as a holder for the carousel -->
-    <div id="myDiv"></div>
-    
-    <!-- carousel data -->
-    <div id="carouselData" style="display: none;">
-      
-      <!-- category  -->
-      <ul data-cat="Category one">
-        <ul>
-          <li data-type="link" data-url="http://www.google.com" data-target="_blank"></li>
-          <li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-            <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-            <p class="smallLabel">When a thumbnail is pressed the carousel can open a browser window or the lighbox.</p>
-          </li>
-          <li data-html-content="">
-            <div class="thumb1Div">
-              <p class="thumb1P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-      
-        <ul>
-          <li data-type="media" data-url="load/images/2.jpg"></li>
-          <li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-            <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-            <p class="smallLabel">When a thumbnail is pressed the carousel can open a browser window or the lighbox.</p>
-          </li>
-          <li data-html-content="">
-            <div class="thumb2Div">
-              <p class="thumb2P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-        
-        <ul>
-          <li data-type="media" data-url="https://vimeo.com/71639066"></li>
-          <li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-            <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-            <p class="smallLabel">When a thumbnail is pressed the carousel can open a browser window or the lighbox.</p>
-          </li>
-          <li data-html-content="">
-            <div class="thumb3Div">
-              <p class="thumb3P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
 
-        <ul>
-          <li data-type="media" data-url="http://www.youtube.com/watch?v=k-jp6b2lCmk"></li>
-          <li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-            <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-            <p class="smallLabel">When a thumbnail is pressed the carousel can open a browser window or the lighbox.</p>
-          </li>
-          <li data-html-content="">
-            <div class="thumb5Div">
-              <p class="thumb5P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
+<script type="text/javascript">
+    Modernizr.load({
+      test: Modernizr.flexbox,
+      nope : 'http://cdn.ink.sapo.pt/3.0.5/css/ink-legacy.min.css'
+    });
+</script>
 
-        <ul>
-          <li data-type="iframe" data-url="http://www.bing.com/"></li>
-          <li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-            <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-            <p class="smallLabel">When a thumbnail is pressed the carousel can open a browser window or the lighbox.</p>
-          </li>
-          <li data-html-content="">
-            <div class="thumb6Div">
-              <p class="thumb6P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-      </ul>
-      <!-- end  -->
-      
-      <!-- category  -->
-      <ul data-cat="Category two">
-        <ul>
-          <li data-type="none"></li>
-          <li data-html-content="">
-            <div class="thumb1Div">
-              <p class="thumb1P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-      
-        <ul>
-          <li data-type="none"></li>
-          <li data-html-content="">
-            <div class="thumb2Div">
-              <p class="thumb2P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-        
-        <ul>
-          <li data-type="none"></li>
-          <li data-html-content="">
-            <div class="thumb3Div">
-              <p class="thumb3P">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum est. <a href="http://www.google.com" target="_blank">Read more.</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-      </ul>
-      <!-- end  -->
+<style>
+
+    body {
+        background: #ededed;
+    }
+
+    .panel {
+        border-radius: 2px;
+        -webkit-box-shadow: #dddddd 0 1px 1px 0;
+        -moz-box-shadow: #dddddd 0 1px 1px 0;
+        box-shadow: #dddddd 0 1px 1px 0;
+        padding: 1em;
+        border: 1px solid #BBB;
+        background-color: #FFF;
+    }
+
+    #thumbs_carousel .slide {
+        opacity: 0.6;
+    }
+    #thumbs_carousel .slide.active {
+        opacity: 1;
+    }
+
+</style>
+
+<div class="ink-grid vertical-space">
+
+    <!--[if lte IE 9 ]>
+    <div class="ink-alert basic" role="alert">
+        <button class="ink-dismiss">&times;</button>
+        <p>
+            <strong>You are using an outdated Internet Explorer version.</strong>
+            Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.
+        </p>
     </div>
-    
-  </body>
-</html>
+    -->
+
+    <h1>Modal Gallery</h1>
+
+    <div class="panel">
+
+        <div id="main_carousel" class="ink-carousel" data-autoload="false">
+
+            <ul class="stage column-group gutters" id="trigger-modal">
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/1"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/2"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/3"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/4"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/5"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/6"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/7"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide all-100">
+                    <figure class="ink-image">
+                        <a href="#"><img src="http://lorempixel.com/1650/928/city/8"></a>
+                        <figcaption class="dark">
+                            This caption is placed after the image
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+            <nav id="pagination_main" class="ink-navigation vertical-space" data-next-label="" data-previous-label="">
+                <ul class="pagination chevron">
+                </ul>
+            </nav>
+
+        </div>
 
 
+        <!-- THUMBNAILS -->
 
+        <div id="thumbs_carousel" class="ink-carousel" data-autoload="false">
+            <ul class="stage column-group gutters unstyled">
+                <li class="slide all-20 active">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/1"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/2"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/3"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/4"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/5"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/6"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/7"></a>
+                </li>
+                <li class="slide all-20">
+                    <a href="#"><img src="http://lorempixel.com/480/270/city/8"></a>
+                </li>
+            </ul>
+            <nav id="pagination_thumbs" class="ink-navigation top-space" data-next-label="" data-previous-label="">
+                <ul class="pagination dotted">
+                </ul>
+            </nav>
+        </div>
 
+        <!-- MODAL -->
+        <div class="ink-shade fade">
+            <div id="modal-window" class="ink-modal fade" data-autoload="false" data-trigger="#trigger-modal" data-width="95%" data-height="95%" role="dialog" aria-hidden="true" aria-labelled-by="modal-title">
+                <div class="modal-header">
+                    <button class="modal-close ink-dismiss"></button>
+                    <h2 id="modal-title">Use arrow left/right to navigate</h2>
+                </div>
+                <div class="modal-body" id="modalContent">
+                <!-- CAROUSEL MODAL -->
+                    <div id="modal_carousel" class="ink-carousel" data-autoload="false">
+
+                        <ul class="stage column-group half-gutters unstyled">
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/1">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/2">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/3">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/4">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/5">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/6">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/7">
+                            </li>
+                            <li class="slide all-100">
+                                <img src="http://lorempixel.com/1650/928/city/8">
+                            </li>
+                        </ul>
+
+                        <nav id="pagination_modal" class="ink-navigation" data-next-label="" data-previous-label="">
+                            <ul class="pagination chevron">
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 <script>
-      FWDR3DCarUtils.onReady(function()
-      {
-        var carousel = new FWDRoyal3DCarousel({   
-          //required settings
-          carouselHolderDivId:"myDiv",
-          carouselDataListDivId:"carouselData",
-          displayType:"fluidwidth",
-          autoScale:"yes",
-          carouselWidth:940,
-          carouselHeight:538,
-          skinPath: <%= asset_path 'minimal_classic_skin' %>),
-                        
-          //main settings
-          backgroundColor:"#DDDDDD",
-          backgroundImagePath:"minimal_clasic_skin/background.jpg",
-          thumbnailsBackgroundImagePath:"assets/minimal_classic_skin/thumbnailsBackground.jpg",
-          scrollbarBackgroundImagePath:"assets/minimal_classic_skin/scrollbarBackground.jpg",
-          backgroundRepeat:"repeat-x",
-          showDisplay2DAlways:"no",
-          carouselStartPosition:"center",
-          numberOfThumbnailsToDisplayLeftAndRight:4,
-          slideshowDelay:5000,
-          autoplay:"no",
-          showPrevButton:"yes",
-          showNextButton:"yes",
-          showSlideshowButton:"yes",
-          disableNextAndPrevButtonsOnMobile:"no",
-          controlsMaxWidth:940,
-          slideshowTimerColor:"#777777",
-          showContextMenu:"no",
-          addKeyboardSupport:"yes",
-                        
-          //thumbnail settings
-          thumbnailWidth:400,
-          thumbnailHeight:350,
-          thumbnailSpaceOffset3D:70,
-          thumbnailSpaceOffset2D:70,
-          thumbnailBorderSize:10,
-          thumbnailBackgroundColor:"#666666",
-          thumbnailBorderColor1:"#fcfdfd",
-          thumbnailBorderColor2:"#e4e4e4",
-          transparentImages:"no",
-          maxNumberOfThumbnailsOnMobile:13,
-          showThumbnailsGradient:"yes",
-          showThumbnailsHtmlContent:"yes",
-          textBackgroundColor:"#333333",
-          textBackgroundOpacity:.7,
-          showText:"no",
-          showTextBackgroundImage:"yes",
-          showThumbnailBoxShadow:"yes",
-          thumbnailBoxShadowCss:"0px 2px 2px #555555",
-          showReflection:"yes",
-          reflectionHeight:60,
-          reflectionDistance:0,
-          reflectionOpacity:.2,
-                        
-          //scrollbar settings
-          showScrollbar:"yes",
-          disableScrollbarOnMobile:"yes",
-          enableMouseWheelScroll:"yes",
-          scrollbarHandlerWidth:300,
-          scrollbarTextColorNormal:"#777777",
-          scrollbarTextColorSelected:"#000000",
-                        
-          //combobox settings
-          showComboBox:"yes",
-          startAtCategory:1,
-          selectLabel:"SELECT CATEGORIES",
-          allCategoriesLabel:"All Categories",
-          showAllCategories:"no",
-          comboBoxPosition:"topright",
-          selectorBackgroundNormalColor1:"#fcfdfd",
-          selectorBackgroundNormalColor2:"#e4e4e4",
-          selectorBackgroundSelectedColor1:"#a7a7a7",
-          selectorBackgroundSelectedColor2:"#8e8e8e",
-          selectorTextNormalColor:"#8b8b8b",
-          selectorTextSelectedColor:"#FFFFFF",
-          buttonBackgroundNormalColor1:"#e7e7e7",
-          buttonBackgroundNormalColor2:"#e7e7e7",
-          buttonBackgroundSelectedColor1:"#a7a7a7",
-          buttonBackgroundSelectedColor2:"#8e8e8e",
-          buttonTextNormalColor:"#000000",
-          buttonTextSelectedColor:"#FFFFFF",
-          comboBoxShadowColor:"#000000",
-          comboBoxHorizontalMargins:12,
-          comboBoxVerticalMargins:12,
-          comboBoxCornerRadius:0,
-                        
-          //lightbox settings
-          addLightBoxKeyboardSupport:"yes",
-          showLightBoxNextAndPrevButtons:"yes",
-          showLightBoxZoomButton:"yes",
-          showLightBoxInfoButton:"yes",
-          showLighBoxSlideShowButton:"yes",
-          showLightBoxInfoWindowByDefault:"no",
-          slideShowAutoPlay:"no",
-          lightBoxVideoAutoPlay:"no",
-          lightBoxVideoWidth:640,
-          lightBoxVideoHeight:480,
-          lightBoxIframeWidth:800,
-          lightBoxIframeHeight:600,
-          lightBoxBackgroundColor:"#000000",
-          lightBoxInfoWindowBackgroundColor:"#FFFFFF",
-          lightBoxItemBorderColor1:"#fcfdfd",
-          lightBoxItemBorderColor2:"#e4FFe4",
-          lightBoxItemBackgroundColor:"#333333",
-          lightBoxMainBackgroundOpacity:.8,
-          lightBoxInfoWindowBackgroundOpacity:.9,
-          lightBoxBorderSize:5,
-          lightBoxBorderRadius:0,
-          lightBoxSlideShowDelay:4000
+Ink.requireModules(['Ink.UI.Carousel_1', 'Ink.UI.Modal_1', 'Ink.Dom.Event_1', 'Ink.Dom.Element_1', 'Ink.Dom.Css_1'], function(Carousel, Modal, InkEvent, InkElement, InkCss){
+
+
+    var instMain = new Carousel('#main_carousel', {pagination: '#pagination_main', onChange: onMainChange});
+    var instThumbs = new Carousel('#thumbs_carousel', {pagination: '#pagination_thumbs'});
+    var instModal = new Carousel('#modal_carousel', {pagination: '#pagination_modal'});
+
+    var modalActive = false;
+
+    new Modal('#modal-window', {
+            onShow: function() {
+                modalActive = true;
+                instModal.refit();
+                instModal.setPage(instMain.getPage());
+            },
+            onDismiss: function() {
+                modalActive = false;
+            }
         });
-      })
+
+    var thumbsItemsPerPage = instThumbs.getSlidesPerPage();
+    var thumbsTotalItems = instThumbs.getTotalSlides();
+
+    function onMainChange(page) {
+
+        if(instMain && instThumbs) {
+
+            var aThumbsElms = instThumbs.getSlidesList();
+            for(var tIdx=0, tLen=aThumbsElms.length; tIdx < tLen; tIdx++) {
+                InkCss.removeClassName(aThumbsElms[tIdx], 'active');
+            }
+
+            var thumbsCurPage = instThumbs.getPage();
+            var thumbsMinItem = thumbsCurPage * thumbsItemsPerPage;
+            var thumbsMaxItem = (thumbsMinItem + thumbsItemsPerPage) - 1;
+            if(thumbsMaxItem > thumbsTotalItems -  1) {
+                thumbsMaxItem = thumbsTotalItems - 1;
+            }
+
+            if(page < thumbsMinItem || page > thumbsMaxItem) {
+                if(page < thumbsMinItem) {
+                    instThumbs.previousPage();
+                } else if(page > thumbsMaxItem){
+                    instThumbs.nextPage();
+                }
+            }
+
+            InkCss.addClassName(aThumbsElms[page], 'active');
+        }
+
+    }
+
+    InkEvent.observe(document, 'keydown', function(event) {
+                if(modalActive) {
+                    switch(event.keyCode) {
+                        case InkEvent.KEY_LEFT:
+                            InkEvent.stopDefault(event);
+                            instModal.previousPage();
+                            break;
+                        case InkEvent.KEY_RIGHT:
+                            InkEvent.stopDefault(event);
+                            instModal.nextPage();
+                            break;
+                    }
+                }
+            });
+
+    InkEvent.observe(instThumbs.getStageElm(), 'click', function(event) {
+                InkEvent.stopDefault(event);
+                var aElms = instThumbs.getSlidesList();
+
+                var tgt = InkEvent.element(event);
+                var slideElm = InkElement.findUpwardsByClass(tgt, 'slide');
+                if(slideElm) {
+                    for(var i=0, len=aElms.length; i < len; i++) {
+                        if(aElms[i] === slideElm) {
+                            instMain.setPage(i);
+                            return;
+                        }
+                    }
+                }
+            });
+
+
+});
 </script>

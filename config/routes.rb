@@ -10,7 +10,7 @@ Profile::Application.routes.draw do
 
   resources :animations
 
-    get '/animated/', to: 'animations#index'
+    get '/qualifications/', to: 'animations#index'
     get '/svg/', to: 'animations#new'
 
   	match '/contact',     to: 'contacts#new',             via: 'get'

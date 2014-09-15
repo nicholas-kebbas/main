@@ -19,3 +19,53 @@
 	-moz-animation-delay: 3s;
 	-webkit-animation-delay: 3s;
 }
+
+
+body {
+    background: #ededed;
+}
+
+header h1 small:before  {
+    content: "|";
+    margin: 0 0.5em;
+    font-size: 1.6em;
+}
+
+article header{
+    padding: 0;
+    overflow: hidden;
+}
+
+article footer {
+    background: none;
+}
+
+article {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.date {
+    float: right;
+}
+
+summary {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+footer {
+	text-align: center;
+    background: #ccc;
+}
+
+#top-menu li a{
+	border-bottom:3px solid rgb(26, 26, 26);
+}
+#top-menu li a:hover{
+	border-bottom:3px solid #81b900;
+}
+#top-menu li{
+	width:25%;
+	text-align: center;
+}

@@ -1,0 +1,126 @@
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#top_heading, #second_heading, #third_heading{
+	text-align: center;
+}
+
+#top_heading{
+	-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay:1s;
+}
+
+#second_heading{
+	-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+}
+
+#third_heading{
+	-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+}
+
+
+body {
+    background: #ededed;
+}
+
+header h1 small:before  {
+    content: "|";
+    margin: 0 0.5em;
+    font-size: 1.6em;
+}
+
+article header{
+    padding: 0;
+    overflow: hidden;
+}
+
+article footer {
+    background: none;
+}
+
+article {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.date {
+    float: right;
+}
+
+summary {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+footer {
+	text-align: center;
+    background: #ccc;
+}
+
+#top-menu li a{
+	border-bottom:3px solid rgb(26, 26, 26);
+}
+#top-menu li a:hover{
+	border-bottom:3px solid #81b900;
+}
+#top-menu li{
+	width:25%;
+	text-align: center;
+}
+
+
+/*contacts*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+#contact_wrapper{
+	width:50%;
+	min-width:300px;
+	background-color:black;
+}
+
+#contact_wrapper{
+	color:white;
+}

@@ -3,9 +3,9 @@
 }
 
 #top_heading{
-	-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-webkit-animation-delay:1s;
+	-animation-delay: 1s!important;
+	-moz-animation-delay: 1s!important;
+	-webkit-animation-delay:1s!important;
 }
 
 #second_heading{
@@ -66,6 +66,6 @@ footer {
 	border-bottom:3px solid #81b900;
 }
 #top-menu li{
-	width:33.3%;
+	width:50%!important;
 	text-align: center;
 }

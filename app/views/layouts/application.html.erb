@@ -10,8 +10,8 @@
         <meta name="author" content="ink, cookbook, recipes">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,100italic,100,400' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon(s) here  -->
 
   <link rel="shortcut icon" href=<%= asset_path 'photo_small.jpg' %>>
@@ -22,15 +22,19 @@
   <link rel="apple-touch-startup-image" href="http://cdn.ink.sapo.pt/3.0.5/img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
   <link rel="apple-touch-startup-image" href="http://cdn.ink.sapo.pt/3.0.5/img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
   <link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/fonts/basic.icons.woff">
-  <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/3.0.5/css/ink.css">
-  <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.5/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href=<% asset_path 'landing.css' %>>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/foundation.min.css">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/normalize.min.css">
 
   <!-- Js -->
+  <script>
+  document.write('<script src=js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.abide.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.accordion.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.alert.min.js"></script>
@@ -40,7 +44,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.equalizer.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.interchange.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.joyride.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.js"></script>
+ 
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.orbit.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.reveal.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.tab.min.js"></script>
@@ -56,16 +60,30 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body>
-  <header class="clearfix vertical-padding">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Nicholas Kebbas | Web Developer</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-    <h1 class="logo xlarge-push-left large-push-left">
-        Nicholas Kebbas<small>Web Developer</small>
-    </h1>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="https://github.com/nicholas-kebbas/" target="_blank">Github Profile</a></li>
+      <li class="active"><a href="http://linkedin.com/in/nicholaskebbas/" target="_blank">Linked In</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
     
-  
 
 <%= yield %>
-    
+    <script>
+      $(document).foundation();
+    </script>  
 </body>
 </html>

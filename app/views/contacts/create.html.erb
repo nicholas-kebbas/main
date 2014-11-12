@@ -1,11 +1,217 @@
-<nav class="ink-navigation xlarge-push-right large-push-right half-top-space">
-                    <ul class="menu horizontal black" id="top-menu">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="/works/">Works</a></li>
-                        <li><a href="/qualifications/">Qualifications</a></li>
-                        <li><a href="/contact/">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 100%; margin: 40px auto 0px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: 300; letter-spacing: -2px; font-family: 'Roboto', sans-serif;}
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic;
+        }
+        #contact_wrapper{
+            background: none repeat scroll 0% 0% rgb(51, 51, 51)
+        }
+        body {
+        background: #ededed;
+        }
+        .name h1{
+            letter-spacing:1px!important;
+        }
+        .post{
+        text-align: center;
+        width:100%;
+        min-height:300px;
+        vertical-align: middle;
+        }
 
-            </header><h1> Thank you for your message. </h1>
-<p> I'll get back to you as soon as possible. <p>
+        .post h2{
+            width:50%;
+            margin:0px auto;
+            color: white!important;
+            vertical-align: middle;
+            padding-top:200px;
+            padding-left:5px;
+            padding-right:5px;
+        }
+
+        .panel {
+            border-radius: 2px;
+            -webkit-box-shadow: #dddddd 0 1px 1px 0;
+            -moz-box-shadow: #dddddd 0 1px 1px 0;
+            box-shadow: #dddddd 0 1px 1px 0;
+            padding: 1em;
+            border: 1px solid #BBB;
+            background-color: #FFF;
+        }
+
+        #thumbs_carousel .slide {
+            opacity: 0.6;
+        }
+        #thumbs_carousel .slide.active {
+            opacity: 1;
+        }
+      .parallax2{
+        background-image: url(<%= asset_path 'frenvu.png' %>);
+        min-height:500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size:cover!important;
+        z-index:100;
+      }
+      .parallax3{
+        background-image: url(<%= asset_path 'trackr.png' %>);
+        min-height:500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size:cover!important;
+        z-index:100;
+      }
+      #name{
+        width:30%;
+        display:inline-block;
+        margin-right:2.5%;
+      }
+      #email{
+        width:45%;
+        display:inline-block;
+        margin-left:2.5%;
+      }
+      textarea{
+        width:80%;
+        color:black;
+      }
+/*contacts*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+#contact_wrapper{
+    width:100%;
+    min-width:300px;
+    background-color:#1a1a1a;
+    
+    border-radius:2px;
+}
+#contact_wrapper h3{
+    color:white;
+}
+
+input:hover, input:active, input:focus{
+    box-shadow: inset 0 0 2px #81b900!important;
+}
+
+textarea:hover, textarea:active, textarea:focus{
+    box-shadow: inset 0 0 2px #81b900!important;
+}
+
+label{
+    color:white;
+}
+
+#submit_button{
+    background-color: #81b900;
+}
+@media only screen and (max-width:450px){
+    .post h2{
+        width:100%;
+    }
+}
+</style>
+        <div id="page-wrap">
+            <h4>Thanks for the message, I'll get back to you as soon as possible.</h4>
+        <div class="post">
+          <div class="parallax2">
+            <div class="postwords">
+              
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="parallax3">
+            <div class="postwords">
+             
+            </div>
+          </div>
+        </div>      
+    </div>
+<div class="content" id="contact">
+    <div align="center">
+      <div id="contact_wrapper" class="ui tertiary form segment">
+        <h3>Want something built? Send me a message</h3>
+        <%= simple_form_for @contact, :html => {:class => 'ui form attached fluid segment' } do |f| %>
+          <div class="field" id="name">
+            <label><label>
+            <%= f.input :name, :required => true %>
+          </div>
+          <div class="field" id="email">
+            <label><label>
+          <%= f.input :email, :required => true %>
+          </div>
+          <div class="field">
+            <label><label>
+          <%= f.input :message, :as => :text, :required => true %>
+          </div>
+          <div>
+            </br>
+            <%= f.button :submit, 'Send message', :class=> "ui blue submit button", :id=>'submit_button' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>
+</div>
+    <section class="column-group gutters">
+        <footer class="clearfix">
+            <div class="ink-grid">
+                <ul class="unstyled inline half-vertical-space">
+                </ul>
+                <p class="note">All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+
+<script>
+$(document).keydown(function(e) {
+    switch(e.which) {
+    case 39: // left
+    window.location = "contact";
+    break;
+    default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+</script>

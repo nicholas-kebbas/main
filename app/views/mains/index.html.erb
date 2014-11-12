@@ -1,364 +1,217 @@
-
-<nav class="ink-navigation xlarge-push-right large-push-right half-top-space">
-                    <ul class="menu horizontal black" id="top-menu">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="/contact/">Contact</a></li>
-                    </ul>
-                </nav>
-
-            </header>
- <script type="text/javascript">
-    Modernizr.load({
-      test: Modernizr.flexbox,
-      nope : 'http://cdn.ink.sapo.pt/3.0.5/css/ink-legacy.min.css'
-    });
-</script>
-
-<style>
-
-    body {
-        background: #ededed;
-    }
-
-    .panel {
-        border-radius: 2px;
-        -webkit-box-shadow: #dddddd 0 1px 1px 0;
-        -moz-box-shadow: #dddddd 0 1px 1px 0;
-        box-shadow: #dddddd 0 1px 1px 0;
-        padding: 1em;
-        border: 1px solid #BBB;
-        background-color: #FFF;
-    }
-
-    #thumbs_carousel .slide {
-        opacity: 0.6;
-    }
-    #thumbs_carousel .slide.active {
-        opacity: 1;
-    }
-
-</style>
-
-</header>
-
-<div class="ink-grid vertical-space">
-
-    <!--[if lte IE 9 ]>
-    <div class="ink-alert basic" role="alert">
-        <button class="ink-dismiss">&times;</button>
-        <p>
-            <strong>You are using an outdated Internet Explorer version.</strong>
-            Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.
-        </p>
-    </div>
-    -->
-
-    <h1 "id=top_heading">Recent Work</h1>
-
-    <div class="panel">
-
-        <div id="main_carousel" class="ink-carousel" data-autoload="false">
-
-            <ul class="stage column-group gutters" id="trigger-modal">
-                <li class="slide all-100">
-                    <figure class="ink-image">
-                        <a href="#"><img src=<%= asset_path 'frenvu.png' %>></a>
-                        <figcaption class="dark">
-                            Go to <a href="http://www.frenvu.com/">Frenvu.com</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide all-100">
-                    <figure class="ink-image">
-                        <a href="#"><img src=<%= asset_path 'trackr.png' %>></a>
-                        <figcaption class="dark">
-                            Go to <a href="http://www.thetrackr.com/">thetrackr.com</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                
-            </ul>
-
-            <nav id="pagination_main" class="ink-navigation vertical-space" data-next-label="" data-previous-label="">
-                <ul class="pagination chevron">
-                </ul>
-            </nav>
-
-        </div>
-
-        <!-- THUMBNAILS -->
-
-        <div id="thumbs_carousel" class="ink-carousel" data-autoload="false">
-            <ul class="stage column-group gutters unstyled">
-                <li class="slide all-20 active">
-                    <a href="#"><img src=<%= asset_path 'frenvu.png' %>></a>
-                </li>
-                <li class="slide all-20">
-                    <a href="#"><img src=<%= asset_path 'trackr.png' %>></a>
-                </li>
-            </ul>
-            <nav id="pagination_thumbs" class="ink-navigation top-space" data-next-label="" data-previous-label="">
-                <ul class="pagination dotted">
-                </ul>
-            </nav>
-        </div>
-
-        <!-- MODAL -->
-        <div class="ink-shade fade">
-            <div id="modal-window" class="ink-modal fade" data-autoload="false" data-trigger="#trigger-modal" data-width="95%" data-height="95%" role="dialog" aria-hidden="true" aria-labelled-by="modal-title">
-                <div class="modal-header">
-                    <button class="modal-close ink-dismiss"></button>
-                    <h2 id="modal-title">Use arrow left/right to navigate</h2>
-                </div>
-                <div class="modal-body" id="modalContent">
-                <!-- CAROUSEL MODAL -->
-                    <div id="modal_carousel" class="ink-carousel" data-autoload="false">
-
-                        <ul class="stage column-group half-gutters unstyled">
-                            <li class="slide all-100">
-                                <img src=<%= asset_path 'frenvu.png' %>>
-                            </li>
-                            <li class="slide all-100">
-                                <img src=<%= asset_path 'trackr.png' %>>
-                            </li>
-                        </ul>
-
-                        <nav id="pagination_modal" class="ink-navigation" data-next-label="" data-previous-label="">
-                            <ul class="pagination chevron">
-                            </ul>
-                        </nav>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-     <title>One Page Resume</title>
-
      <style type="text/css">
         * { margin: 0; padding: 0; }
         body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #page-wrap { width: 100%; margin: 40px auto 0px; }
         #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: 300; letter-spacing: -2px; font-family: 'Roboto', sans-serif;}
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
         p { margin: 0 0 16px 0; }
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 32px 17px; }
         #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
-</head>
-
-<body>
-
-    <div id="page-wrap">
-    
-        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">C'thulhu</h1>
-        
-            <p>
-                Cell: <span class="tel">555-666-7777</span><br />
-                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
-            </p>
-        </div>
-                
-        <div id="objective">
-            <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
-            </p>
-        </div>
-        
-        <div class="clear"></div>
-        
-        <dl>
-            <dd class="clear"></dd>
-            
-            <dt>Education</dt>
-            <dd>
-                <h2>Withering Madness University - Planet Vhoorl</h2>
-                <p><strong>Major:</strong> Public Relations<br />
-                   <strong>Minor:</strong> Scale Tending</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Skills</dt>
-            <dd>
-                <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
-                <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Experience</dt>
-            <dd>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-                <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
-                </ul>
-                
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-                <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
-                </ul> 
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
-        </dl>
-        
-        <div class="clear"></div>
-    
-    </div>
-
-</body>
-
-<script>
-Ink.requireModules(['Ink.UI.Carousel_1', 'Ink.UI.Modal_1', 'Ink.Dom.Event_1', 'Ink.Dom.Element_1', 'Ink.Dom.Css_1'], function(Carousel, Modal, InkEvent, InkElement, InkCss){
-
-
-    var instMain = new Carousel('#main_carousel', {pagination: '#pagination_main', onChange: onMainChange});
-    var instThumbs = new Carousel('#thumbs_carousel', {pagination: '#pagination_thumbs'});
-    var instModal = new Carousel('#modal_carousel', {pagination: '#pagination_modal'});
-
-    var modalActive = false;
-
-    new Modal('#modal-window', {
-            onShow: function() {
-                modalActive = true;
-                instModal.refit();
-                instModal.setPage(instMain.getPage());
-            },
-            onDismiss: function() {
-                modalActive = false;
-            }
-        });
-
-    var thumbsItemsPerPage = instThumbs.getSlidesPerPage();
-    var thumbsTotalItems = instThumbs.getTotalSlides();
-
-    function onMainChange(page) {
-
-        if(instMain && instThumbs) {
-
-            var aThumbsElms = instThumbs.getSlidesList();
-            for(var tIdx=0, tLen=aThumbsElms.length; tIdx < tLen; tIdx++) {
-                InkCss.removeClassName(aThumbsElms[tIdx], 'active');
-            }
-
-            var thumbsCurPage = instThumbs.getPage();
-            var thumbsMinItem = thumbsCurPage * thumbsItemsPerPage;
-            var thumbsMaxItem = (thumbsMinItem + thumbsItemsPerPage) - 1;
-            if(thumbsMaxItem > thumbsTotalItems -  1) {
-                thumbsMaxItem = thumbsTotalItems - 1;
-            }
-
-            if(page < thumbsMinItem || page > thumbsMaxItem) {
-                if(page < thumbsMinItem) {
-                    instThumbs.previousPage();
-                } else if(page > thumbsMaxItem){
-                    instThumbs.nextPage();
-                }
-            }
-
-            InkCss.addClassName(aThumbsElms[page], 'active');
+        #objective p { font-family: Georgia, Serif; font-style: italic;
+        }
+        #contact_wrapper{
+            background: none repeat scroll 0% 0% rgb(51, 51, 51)
+        }
+        body {
+        background: #ededed;
+        }
+        .name h1{
+            letter-spacing:1px!important;
+        }
+        .post{
+        text-align: center;
+        width:100%;
+        min-height:300px;
+        vertical-align: middle;
         }
 
+        .post h2{
+            width:50%;
+            margin:0px auto;
+            color: white!important;
+            vertical-align: middle;
+            padding-top:200px;
+            padding-left:5px;
+            padding-right:5px;
+        }
+
+        .panel {
+            border-radius: 2px;
+            -webkit-box-shadow: #dddddd 0 1px 1px 0;
+            -moz-box-shadow: #dddddd 0 1px 1px 0;
+            box-shadow: #dddddd 0 1px 1px 0;
+            padding: 1em;
+            border: 1px solid #BBB;
+            background-color: #FFF;
+        }
+
+        #thumbs_carousel .slide {
+            opacity: 0.6;
+        }
+        #thumbs_carousel .slide.active {
+            opacity: 1;
+        }
+      .parallax2{
+        background-image: url(<%= asset_path 'frenvu.png' %>);
+        min-height:500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size:cover!important;
+        z-index:100;
+      }
+      .parallax3{
+        background-image: url(<%= asset_path 'trackr.png' %>);
+        min-height:500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size:cover!important;
+        z-index:100;
+      }
+      #name{
+        width:30%;
+        display:inline-block;
+        margin-right:2.5%;
+      }
+      #email{
+        width:45%;
+        display:inline-block;
+        margin-left:2.5%;
+      }
+      textarea{
+        width:80%;
+        color:black;
+      }
+/*contacts*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+#contact_wrapper{
+    width:100%;
+    min-width:300px;
+    background-color:#1a1a1a;
+    
+    border-radius:2px;
+}
+#contact_wrapper h3{
+    color:white;
+}
+
+input:hover, input:active, input:focus{
+    box-shadow: inset 0 0 2px #81b900!important;
+}
+
+textarea:hover, textarea:active, textarea:focus{
+    box-shadow: inset 0 0 2px #81b900!important;
+}
+
+label{
+    color:white;
+}
+
+#submit_button{
+    background-color: #81b900;
+}
+@media only screen and (max-width:450px){
+    .post h2{
+        width:100%;
     }
-
-    InkEvent.observe(document, 'keydown', function(event) {
-                if(modalActive) {
-                    switch(event.keyCode) {
-                        case InkEvent.KEY_LEFT:
-                            InkEvent.stopDefault(event);
-                            instModal.previousPage();
-                            break;
-                        case InkEvent.KEY_RIGHT:
-                            InkEvent.stopDefault(event);
-                            instModal.nextPage();
-                            break;
-                    }
-                }
-            });
-
-    InkEvent.observe(instThumbs.getStageElm(), 'click', function(event) {
-                InkEvent.stopDefault(event);
-                var aElms = instThumbs.getSlidesList();
-
-                var tgt = InkEvent.element(event);
-                var slideElm = InkElement.findUpwardsByClass(tgt, 'slide');
-                if(slideElm) {
-                    for(var i=0, len=aElms.length; i < len; i++) {
-                        if(aElms[i] === slideElm) {
-                            instMain.setPage(i);
-                            return;
-                        }
-                    }
-                }
-            });
-
-
-});
-</script>
-            <section class="column-group gutters">
+}
+</style>
+        <div id="page-wrap">
+            <h1>Some Recent Projects I've worked on...</h1>
+        <div class="post">
+          <div class="parallax2">
+            <div class="postwords">
+              
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="parallax3">
+            <div class="postwords">
+             
+            </div>
+          </div>
+        </div>      
+    </div>
+<div class="content" id="contact">
+    <div align="center">
+      <div id="contact_wrapper" class="ui tertiary form segment">
+        <h3>Want something built? Send me a message</h3>
+        <%= simple_form_for @contact, :html => {:class => 'ui form attached fluid segment' } do |f| %>
+          <div class="field" id="name">
+            <label><label>
+            <%= f.input :name, :required => true %>
+          </div>
+          <div class="field" id="email">
+            <label><label>
+          <%= f.input :email, :required => true %>
+          </div>
+          <div class="field">
+            <label><label>
+          <%= f.input :message, :as => :text, :required => true %>
+          </div>
+          <div>
+            </br>
+            <%= f.button :submit, 'Send message', :class=> "ui blue submit button", :id=>'submit_button' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>
+</div>
+    <section class="column-group gutters">
         <footer class="clearfix">
             <div class="ink-grid">
                 <ul class="unstyled inline half-vertical-space">
-                    <li class="active"><a href="#">Nicholas Kebbas</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">Contacts</a></li>
                 </ul>
                 <p class="note">All rights reserved.</p>
             </div>
         </footer>
+    </section>
 
 
 <script>
 $(document).keydown(function(e) {
-switch(e.which) {
-case 39: // left
-window.location = "contact";
-break;
-default: return; // exit this handler for other keys
-}
-e.preventDefault(); // prevent the default action (scroll / move caret)
+    switch(e.which) {
+    case 39: // left
+    window.location = "contact";
+    break;
+    default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
 });
 </script>

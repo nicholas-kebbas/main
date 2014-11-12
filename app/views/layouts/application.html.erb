@@ -25,6 +25,9 @@
   <link rel="stylesheet" type="text/css" href=<% asset_path 'landing.css' %>>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/foundation.min.css">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/normalize.min.css">
+  <!--Animate -->
+  <link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/192751/animate_(1).css">
+  <!--Viewport -->
 
   <!-- Js -->
   <script>
@@ -33,7 +36,7 @@
     + '.js><\/script>');
 </script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
+  
    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.abide.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation/foundation.accordion.min.js"></script>
@@ -63,7 +66,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#">Nicholas Kebbas | Web Developer</a></h1>
+      <h1><a href="#">Nicholas Kebbas | Web Developer</a><span class="animated zoomInLeft" id="awesome"> and awesome person</span></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -86,4 +89,23 @@
       $(document).foundation();
     </script>  
 </body>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/192751/jquery.viewportchecker.js"></script>
+<script>
+    $('.postwords').addClass("hidden2").viewportChecker({
+      classToAdd:'visible animated fadeIn',
+      offset: 300
+    });
+     $('.postwords_left').addClass("hidden2").viewportChecker({
+      classToAdd:'visible animated fadeIn',
+      offset: 300
+    });
+      $('.postwords_right').addClass("hidden2").viewportChecker({
+      classToAdd:'visible animated fadeIn',
+      offset: 300
+    });
+       $('.postwords_bottom').addClass("hidden2").viewportChecker({
+      classToAdd:'visible animated fadeIn',
+      offset: 300
+    });
+</script>
 </html>

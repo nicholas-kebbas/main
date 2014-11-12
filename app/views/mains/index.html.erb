@@ -1,5 +1,6 @@
 <head>
      <style type="text/css">
+     @keyframes fadeIn { from { opacity:0; } to { opacity:1;} }
         * { margin: 0; padding: 0; }
         body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
@@ -22,6 +23,12 @@
         }
         .name h1{
             letter-spacing:1px!important;
+        }
+        .name h1 a{
+            display:inline-block!important;
+        }
+        .name h1 span{
+            color:white;
         }
         .post{
         text-align: center;
@@ -74,6 +81,41 @@
         -webkit-background-size:cover!important;
         z-index:100;
       }
+      .hidden2{
+       opacity:0;
+   }
+   .visible2{
+       opacity:1;
+  }
+  #awesome{
+    -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  }
+
+  .postwords_left{
+    margin-right:30%;
+    margin-top:130px;
+
+  }
+
+  .postwords_right{
+    margin-left:30%;
+    margin-top:10px;
+  }
+  #main{
+    -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  font-size:32px;
+  color:white;
+  }
       #name{
         width:30%;
         display:inline-block;
@@ -148,6 +190,16 @@ label{
     .post h2{
         width:100%;
     }
+     .postwords_left{
+    margin-right:100px;
+    margin-top:100px;
+
+  }
+
+  .postwords_right{
+    margin-left:100px;
+    margin-top:100px;
+  }
 }
 </style>
         <div id="page-wrap">
@@ -155,14 +207,26 @@ label{
         <div class="post">
           <div class="parallax2">
             <div class="postwords">
-              
+              <div class="animated fadeIn" id="main">Frenvu</div>
+            </div>
+            <div class="postwords_left">
+              <div class="animated fadeIn" id="main">Django.</div>
+            </div>
+            <div class="postwords_right">
+              <div class="animated fadeIn" id="main">Responsive.</div>
             </div>
           </div>
         </div>
         <div class="post">
           <div class="parallax3">
             <div class="postwords">
-             
+             <div class="animated fadeIn" id="main">Trackr</div>
+            </div>
+            <div class="postwords_left">
+              <div class="animated fadeIn" id="main">Ruby on Rails.</div>
+            </div>
+            <div class="postwords_right">
+              <div class="animated fadeIn" id="main">HTML5.</div>
             </div>
           </div>
         </div>      
@@ -202,16 +266,6 @@ label{
             </div>
         </footer>
     </section>
-
-
-<script>
-$(document).keydown(function(e) {
-    switch(e.which) {
-    case 39: // left
-    window.location = "contact";
-    break;
-    default: return; // exit this handler for other keys
-    }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
-});
-</script>
+    <script>
+    $('#awesome').addClass('animated zoomInLeft');
+    </script>

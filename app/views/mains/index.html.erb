@@ -1,32 +1,57 @@
+        <style type="text/css">
+        * { margin: 0; padding: 0; }
+        .page-wrap{
+          width:100%;
+        }
+        .what_heading{
+          text-align: center;
+          border-bottom:2px solid #2ecc71;
+        }
+        #submit_button{
+          background-color: #2ecc71
+        }
+        .top-bar-section li a{
+          background-color:#2ecc71!important;
+        }
+        .top-bar-section li a:hover, #submit_button:hover{
+          opacity:.8;
+        }
+        .row{
+          padding-left: 20px;
+          padding-right:20px;
+        }
+        .row li{
+          list-style: none outside none;
+          font-size: 18px;
+          display: inline-block;
+          width: 33%;
+          height: 80px;
+          text-align: center;
+        }
+        .row li:hover{
+          color:#2ecc71;
+        }
+        @media only screen and (max-width:850px){
+          .row li{
+            width:100%;
+          }
+        }
+        </style>
         <div id="page-wrap">
-            <h1>Some Recent Projects I've worked on...</h1>
-        <div class="post">
-          <div class="parallax2">
-            <div class="postwords">
-              <div class="animated fadeIn" id="main">Frenvu</div>
-            </div>
-            <div class="postwords_left">
-              <div class="animated fadeIn" id="main">Django.</div>
-            </div>
-            <div class="postwords_right">
-              <div class="animated fadeIn" id="main">Responsive.</div>
-            </div>
+        <div class="row">
+            <h1 class="what_heading">What I do</h1>
+              <li>Valid and Semantic HTML5</li>
+              <li>Proper use of CSS3</li>
+              <li>Lightweight Javascript</li>
+              <li>Efficient Jquery</li>
+              <li>Effortless Branching and Merging with Git</li>
+              <li>Deployment to Heroku</li>
+              <li>Ruby on Rails</li>
+              <li>Proper Tags and Keywords for SEO</li>
+              <li>Django</li>
           </div>
-        </div>
-        <div class="post">
-          <div class="parallax3">
-            <div class="postwords">
-             <div class="animated fadeIn" id="main">Trackr</div>
-            </div>
-            <div class="postwords_left">
-              <div class="animated fadeIn" id="main">Ruby on Rails.</div>
-            </div>
-            <div class="postwords_right">
-              <div class="animated fadeIn" id="main">HTML5.</div>
-            </div>
-          </div>
+        <div class="row">
         </div>      
-    </div>
 <div class="content" id="contact">
     <div align="center">
       <div id="contact_wrapper" class="ui tertiary form segment">

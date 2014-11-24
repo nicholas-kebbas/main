@@ -5,7 +5,7 @@ gem 'rails', '4.0.2'
 gem 'pg'
 gem 'mail_form'
 gem 'simple_form'
-
+gem 'foundation-rails'
 # Use sqlite3 as the database for Active Record
 group :development do
 	gem 'sqlite3'

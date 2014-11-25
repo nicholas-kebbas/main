@@ -64,12 +64,14 @@
 }
 .button{
   background-color:  #34495e;
-  min-width:250px;
+  min-width:280px;
+  font-size:18px;
 }
 .reveal-modal{
   background-color: #34495e;
   color:white;
   border: 5px solid white;
+
 }
 .reveal-modal h2{
   color:#2ecc71;
@@ -81,6 +83,17 @@
 @media only screen and (max-width:850px){
   .row li{
     width:100%;
+  }
+  #contact{
+    margin-top:200px;
+  }
+  .reveal-modal{
+    max-width:99.9%;
+  }
+}
+@media only screen and (max-width:450px){
+  .top-bar #awesome{
+    display:none;
   }
 }
 hr{
@@ -95,6 +108,9 @@ abbr{
 }
 .reveal-modal h2{
   text-align: center;
+}
+#contact_wrapper h3{
+  padding-top:20px;
 }
 /*Buttons */
 
@@ -215,7 +231,4 @@ abbr{
     </div>
     <script>
     $('#awesome').addClass('animated zoomInLeft');
-    </script>
-    <script>
-    $(function(){ $(document).foundation(); });
     </script>

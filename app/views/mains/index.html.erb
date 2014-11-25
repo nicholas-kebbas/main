@@ -83,7 +83,19 @@
     width:100%;
   }
 }
-
+hr{
+  border-color:#2ecc71;
+}
+label{
+  font-size:18px!important;
+  letter-spacing: .5px;
+}
+abbr{
+  display:none;
+}
+.reveal-modal h2{
+  text-align: center;
+}
 /*Buttons */
 
 
@@ -109,6 +121,7 @@
     <div align="center">
       <div id="contact_wrapper" class="ui tertiary form segment">
         <h3>Want something built? Send me a message</h3>
+        <hr>
         <%= simple_form_for @contact, :html => {:class => 'ui form attached fluid segment' } do |f| %>
           <div class="field" id="name">
             <label><label>
@@ -202,4 +215,7 @@
     </div>
     <script>
     $('#awesome').addClass('animated zoomInLeft');
+    </script>
+    <script>
+    $(function(){ $(document).foundation(); });
     </script>

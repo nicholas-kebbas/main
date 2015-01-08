@@ -171,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222!important;
+    background-color: #222;
 }
 
 .navbar-default .navbar-brand {
@@ -263,14 +263,6 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
-    background-position: center center;
-    background-repeat: none;
-    background-image: url('header-bg.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 section#contact {

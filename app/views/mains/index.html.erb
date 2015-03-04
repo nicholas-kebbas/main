@@ -3,11 +3,16 @@ section#contact {
 
     background-image: url('assets/map-image.png')!important;
 }
-.banner {
-    padding: 100px 0;
+.parallax_header{
     color: #f8f8f8;
-    background: asset-data-url('banner-bg.jpg') no-repeat center center!important;
+    background-image: url('assets/header-bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    z-index:100;
+    min-height:600px;
+    width:100%;
+
 }
 
 #services i:hover{

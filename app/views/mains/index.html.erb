@@ -87,15 +87,15 @@ section#contact {
                         <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">UI/UX Consulting</h4>
-                    <p class="text-muted">User Experience and the User Interface are equally important in maximizing conversions on your website. </p>
+                    <p class="text-muted"></p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">As of December 2014, about a third of all web browsing is done on a tablet or smartphone. Having a fully responsive website is crucial to the success of any modern day business.</p>
+                    <h4 class="service-heading">Responsive Web Design</h4>
+                    <p class="text-muted"></p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -103,7 +103,7 @@ section#contact {
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Full Stack Development</h4>
-                    <p class="text-muted">I've developed several websites with various technologies; I can integrate seemlessly into a team or take on a project independently.</p>
+                    <p class="text-muted"></p>
                 </div>
             </div>
         </div>
@@ -227,7 +227,7 @@ section#contact {
                                     <h4 class="subheading">Frenvu is Born</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Began working with friends on a matching site for platonic relationships. I familiarized myself with Django and grew my knowledge of graphic design, UI/UX Design, Git, Heroku, and Front End Development.</p>
+                                    <p class="text-muted">Began working on a matching site for platonic relationships. I familiarized myself with Django and grew my knowledge of graphic design, UI/UX Design, Git, Heroku, and Front End Development.</p>
                                 </div>
                             </div>
                         </li>
@@ -331,35 +331,6 @@ section#contact {
             </div>
         </div>
     </footer>
-<!-- Portfolio Modal 4 
-    <div class="content" id="contact">
-    <div class="inner_contact" align="center">
-      <div id="contact_wrapper" class="ui tertiary form segment">
-        <h3>Want something built? Send me a message</h3>
-        <hr>
-        <%= simple_form_for @contact, :html => {:class => 'ui form attached fluid segment' } do |f| %>
-          <div class="field" id="name">
-            <label><label>
-            <%= f.input :name, :required => true %>
-          </div>
-          <div class="field" id="email">
-            <label><label>
-          <%= f.input :email, :required => true %>
-          </div>
-          <div class="field">
-            <label><label>
-          <%= f.input :message, :as => :text, :required => true %>
-          </div>
-          <div>
-            </br>
-            <%= f.button :submit, 'Send message', :class=> "ui blue submit button", :id=>'submit_button' %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-</div>
--->
-
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
@@ -378,15 +349,13 @@ section#contact {
                         <div class="modal-body">
                             <!-- Audiovox details -->
                             <h2>Audiovox</h2>
-                            <p class="item-intro text-muted">This website sells the Audioxov Insite tracking device.</p>
+                            <p class="item-intro text-muted">Ruby on Rails, HTML5, CSS3, JQuery</p>
                             <img class="img-responsive" src="assets/audiovox.png" alt="">
-                            <p>I worked with the back end development team to make this Ruby on Rails site responsive, increasing conversion rates significantly.</p>
                             <p>
-                               You can view the site<a href="http://www.audiovoxinsite.com/">here</a>.</p>
+                               You can view the site<a href="http://www.audiovoxinsite.com/"> here</a>.</p>
                             <ul class="list-inline">
-                                <li>Date: June 2014</li>
-                                <li>Client: Audiovox</li>
-                                <li>Category: Web Development</li>
+                                <li>Date: April 2014</li>
+                                <li>Role: Front End Developer</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -410,10 +379,13 @@ section#contact {
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Frenvu</h2>
-                            <p class="item-intro text-muted">Match making site for platonic relationships.</p>
+                            <p class="item-intro text-muted">Django, HTML5, CSS3, Javascript, JQuery</p>
                             <img class="img-responsive img-centered" src="assets/frenvu.png" alt="">
-                            <p><a href="http://www.frenvu.com/">Frenvu </a>was built using Django, Javascript, HTML, and CSS. It was deployed on Heroku and handles assets with Amazon Web Services.I worked alongside a Django developer as the UI/UX Designer and Front End Developer of the project.</p>
                             <p>You can view Frenvu in its entirety<a href="http://www.frenvu.com/"> here</a>.</p>
+                             <ul class="list-inline">
+                                <li>Date: December 2014</li>
+                                <li>Role: Front End Developer, UX/UI Designer</li>
+                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -437,11 +409,14 @@ section#contact {
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>TrackR</h2>
-                            <p class="item-intro text-muted">Website for the popular crowd GPS device, the TrackR.</p>
+                            <p class="item-intro text-muted">Ruby on Rails, HTML5, CSS3</p>
                             <img class="img-responsive img-centered" src="assets/trackr.png" alt="">
-                            <p>I worked with the development team to improve the interface and user experience of the site.</p>
                             <p>You can view the site<a href="http://www.thetrackr.com/"> here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                             <ul class="list-inline">
+                                <li>Date: May 2014</li>
+                                <li>Role: Front End Developer</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -464,10 +439,14 @@ section#contact {
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>NBA Salary Info</h2>
+                            <p class="item-intro text-muted">Angular.js, Express.js, HTML5, CSS3, Bootstrap 3</p>
                             <img class="img-responsive img-centered" src="assets/salary_cap.png" alt="">
-                            <p>Used Angular JS and Express JS to develop a </p>
                             <p>You can view the site at <a href="https://cap-space.herokuapp.com">cap-space.herokuapp.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <ul class="list-inline">
+                                <li>Date: February 2015</li>
+                                <li>Role: Developer</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -490,9 +469,13 @@ section#contact {
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Squirrel List</h2>
+                            <p class="item-intro text-muted">Ruby on Rails, HTML5, CSS3, Bootstrap 3</p>
                             <img class="img-responsive img-centered" src="assets/squirrelist.png" alt="">
-                            <p>Responsive Landing Page for iOS app</p>
                             <p>You can view the site at <a href="https://squirrellist.herokuapp.com">squirrellist.herokuapp.com</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: January 2015</li>
+                                <li>Role: Developer</li>
+                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>

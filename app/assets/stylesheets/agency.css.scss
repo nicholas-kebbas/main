@@ -89,6 +89,12 @@ h2{
 .bg-darkest-gray {
     background-color: #222!important;
 }
+.hidden2{
+    opacity: 0;
+}
+.visible{
+    opacity:1;
+}
 
 .btn-primary {
     border-color: #fed136;
@@ -929,39 +935,63 @@ body {
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -moz-animation-duration: 3s;
-    -moz-animation-delay: 2s;
+    -moz-animation-delay: 1s;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 #item2{
    -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -moz-animation-duration: 3s;
-    -moz-animation-delay: 2s;
+    -moz-animation-delay: 1s;
     animation-duration: 3s;
-    animation-delay: 2s; 
+    animation-delay: 1s;
 }
 #item3{
-    -webkit-animation-duration: 3s;
+   -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -moz-animation-duration: 3s;
-    -moz-animation-delay: 2s;
+    -moz-animation-delay: 1s;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 #item4{
    -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -moz-animation-duration: 3s;
-    -moz-animation-delay: 2s;
+    -moz-animation-delay: 1s;
     animation-duration: 3s;
-    animation-delay: 2s; 
+    animation-delay: 1s;
 }
 #item5{
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -moz-animation-duration: 3s;
-    -moz-animation-delay: 2s;
+    -moz-animation-delay: 1s;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 1s;
+}
+#services{
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+#contact{
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+#about{
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }

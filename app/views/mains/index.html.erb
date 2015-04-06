@@ -466,10 +466,36 @@
 </div>
     <script>
     $('#welcome').addClass('animated fadeInDown');
-
-    $('#item1').addClass('animated rollIn');
-    $('#item2').addClass('animated fadeInDown');
-    $('#item3').addClass('animated flipInX');
-    $('#item4').addClass('animated bounceInUp');
-    $('#item5').addClass('animated rotateInDownLeft');
+    jQuery('#item1').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated rollIn',
+        offset: 100
+    });
+    jQuery('#item2').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated fadeInDown',
+        offset: 100
+    });
+    jQuery('#item3').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated fadeInUp',
+        offset: 100
+    });
+    jQuery('#item4').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated slideInUp',
+        offset: 100
+    });
+    jQuery('#item5').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated slideInDown',
+        offset: 100
+    });
+    jQuery('#about').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated slideInLeft',
+        offset: 300
+    });
+    jQuery('#contact').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated slideInUp',
+        offset: 200
+    });
+    jQuery('#services').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated adeIn',
+        offset: 200
+    });
     </script>

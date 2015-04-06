@@ -97,8 +97,9 @@
                     <br>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="row"> <!-- start portfolio -->
+
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item1">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -111,7 +112,7 @@
                         <h4>Audiovox</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item2">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -124,7 +125,7 @@
                         <h4>ProSalaryCap</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item3">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -137,7 +138,7 @@
                         <h4>Trackr</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item4">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -150,9 +151,7 @@
                         <h4>Frenvu</h4>
                     </div>
                 </div>
-                
-                
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item5">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -165,7 +164,7 @@
                         <h4>SquirrelList App</h4>
                     </div>
                 </div>
-                
+            <!--End Animation Class -->
             </div>
         </div>
     </section>
@@ -467,4 +466,10 @@
 </div>
     <script>
     $('#welcome').addClass('animated fadeInDown');
+
+    $('#item1').addClass('animated rollIn');
+    $('#item2').addClass('animated fadeInDown');
+    $('#item3').addClass('animated flipInX');
+    $('#item4').addClass('animated bounceInUp');
+    $('#item5').addClass('animated rotateInDownLeft');
     </script>

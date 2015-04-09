@@ -20,16 +20,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a class="link" href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a class="link" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a class="link" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a class="link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -98,33 +98,37 @@
                 </div>
             </div>
             <div class="row"> <!-- start portfolio -->
-
-                <div class="col-md-4 col-sm-6 portfolio-item" id="item1">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                <div class="top">
+                    <div class="col-md-4 col-sm-6 portfolio-item" id="item1">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
                             </div>
+                            <img src="assets/audiovox.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Audiovox</h4>
                         </div>
-                        <img src="assets/audiovox.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Audiovox</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item" id="item2">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="assets/salary_cap.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>ProSalaryCap</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item" id="item2">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/salary_cap.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>ProSalaryCap</h4>
-                    </div>
-                </div>
+            </div>
+                <!--End Top-->
+               <div class="bottom">
                 <div class="col-md-4 col-sm-6 portfolio-item" id="item3">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -138,6 +142,23 @@
                         <h4>Trackr</h4>
                     </div>
                 </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item5">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/squirrelist.png" class="img-responsive" id="squirrel_image" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>SquirrelList App</h4>
+                    </div>
+                </div>
+            </div>
+                <!--End bottom -->
+                <!--
                 <div class="col-md-4 col-sm-6 portfolio-item" id="item4">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -151,19 +172,21 @@
                         <h4>Frenvu</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item" id="item5">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
+            -->
+                <!--
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item6">
+                    <a hhref="https://github.com/nicholas-kebbas" target="_blank" class="portfolio-link">
+                        <div class="portfolio-item" id="other_projects">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-github fa-5x"></i>
                             </div>
                         </div>
-                        <img src="assets/squirrelist.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>SquirrelList App</h4>
+                        <h4>Other Projects</h4>
                     </div>
                 </div>
+            -->
             <!--End Animation Class -->
             </div>
         </div>
@@ -343,7 +366,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
+    <!-- Portfolio Modal 2 
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -370,7 +393,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Portfolio Modal 3 -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -483,7 +506,11 @@
         offset: 100
     });
     jQuery('#item5').addClass('hidden2').viewportChecker({
-        classToAdd:'visible animated slideInDown',
+        classToAdd:'visible animated slideInUp',
+        offset: 100
+    });
+    jQuery('#item6').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated slideInUp',
         offset: 100
     });
     jQuery('#about').addClass('hidden2').viewportChecker({
@@ -491,11 +518,11 @@
         offset: 300
     });
     jQuery('#contact').addClass('hidden2').viewportChecker({
-        classToAdd:'visible animated slideInUp',
+        classToAdd:'visible animated fadeIn',
         offset: 200
     });
     jQuery('#services').addClass('hidden2').viewportChecker({
-        classToAdd:'visible animated adeIn',
+        classToAdd:'visible animated fadeIn',
         offset: 200
     });
     </script>

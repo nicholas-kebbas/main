@@ -120,6 +120,9 @@ h2{
 .open .dropdown-toggle.btn-primary {
     background-image: none;
 }
+.link:hover{
+    color:#fff!important;
+}
 
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -391,6 +394,20 @@ section h3.section-subheading {
     section {
         padding: 150px 0;
     }
+}
+
+.bottom, .top{
+    width:100%;
+    display:block;
+    text-align:center;
+    margin:0 auto;
+}
+
+#item1, #item2, #item3, #item4{
+    float:none!important;  
+}
+#squirrel_image{
+    max-height:250px!important;
 }
 
 .service-heading {
@@ -932,66 +949,42 @@ body {
 }
 
 #item1{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #item2{
-   -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+   -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #item3{
-   -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+   -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #item4{
-   -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+   -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #item5{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #services{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #contact{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 #about{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 3s;
-    -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }

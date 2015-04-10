@@ -6,6 +6,7 @@ gem 'pg'
 gem 'mail_form'
 gem 'simple_form'
 gem 'foundation-rails'
+gem 'newrelic_rpm'
 # Use sqlite3 as the database for Active Record
 group :development do
 	gem 'sqlite3'

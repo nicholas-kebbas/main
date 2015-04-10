@@ -25,12 +25,14 @@ section#contact {
 }
 
 #services i:hover{
-    font-size: 48px;
+    font-size: 64px;
 }
 .text-muted {
     color: #777;
 }
-
+#portfolio .col-sm-6{
+    width: 100%!important;
+}
 .text-primary {
     color: #fed136;
 }
@@ -212,8 +214,7 @@ fieldset[disabled] .btn-xl.active {
     animation-duration: 2s;
     -moz-animation-duration: 2s;
 }
-.navbar-brand:hover{
-}
+
 
 .navbar a{
     color: #FED136!important;
@@ -408,6 +409,7 @@ section h3.section-subheading {
 }
 #squirrel_image{
     max-height:250px!important;
+    min-width:400px;
 }
 
 .service-heading {

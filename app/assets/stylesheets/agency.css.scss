@@ -19,7 +19,7 @@ section#contact {
         width:100%;
     }
 }
-@media(min-width: 450px) {
+@media(min-width: 450px) and (max-width: 1024px) {
     .parallax_header{
         color: #f8f8f8;
         background-image: url('header-bg-small.jpg');

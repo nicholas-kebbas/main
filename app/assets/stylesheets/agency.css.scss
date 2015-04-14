@@ -420,7 +420,7 @@ section h3.section-subheading {
     }
 }
 
-@media(min-width:450px) {
+@media(max-width:450px) {
     #squirrel-image{
         max-width: 350px;
     }

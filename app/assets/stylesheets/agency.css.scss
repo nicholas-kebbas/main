@@ -3,10 +3,15 @@ body {
     font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 section#contact {
-
     background-image: url('map-image.png')!important;
 }
-
+#contact_container{
+    text-align:center;
+}
+.footnote{
+    margin-top:25px;
+    color:white;
+}
 @media(min-width: 1100px) {
     .parallax_header{
         color: #f8f8f8;
@@ -830,6 +835,7 @@ ul.social-buttons {
     width:200px;
     height:70px;
     font-size:18px;
+    margin-bottom: 15px;
 }
 .text-primary{
     color:#FED136!important;

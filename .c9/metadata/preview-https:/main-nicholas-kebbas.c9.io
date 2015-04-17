@@ -1,1 +1,1 @@
-{"filter":false,"title":"[P] https://main-nicholas-kebbas.c9.io","undoManager":{"mark":0,"position":-1,"stack":[]},"preview":{"path":"http://0.0.0.0:3000","previewer":"preview.browser"},"timestamp":1426562043315,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
+{"changed":false,"filter":false,"title":"[P] https://main-nicholas-kebbas.c9.io","value":"","undoManager":{"mark":0,"position":-1,"stack":[]},"preview":{"path":"http://0.0.0.0:3000","previewer":"preview.browser"},"timestamp":1426562043315}

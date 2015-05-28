@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require smooth_scroll
+//= require animate_portfolio
 //= require turbolinks
 //= require_tree .

@@ -5,6 +5,7 @@ class MainsController < ApplicationController
   # GET /mains.json
   def index
     @mains = Main.all
+    @contact = Contact.new
   end
 
   # GET /mains/1

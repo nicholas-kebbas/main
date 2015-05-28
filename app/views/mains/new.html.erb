@@ -1,0 +1,64 @@
+<div id="page-wrap">
+        <h1>Some Recent Projects I've worked on...</h1>
+    <div class="post">
+      <div class="parallax2">
+        <div class="postwords">
+          
+        </div>
+      </div>
+    </div>
+    <div class="post">
+      <div class="parallax3">
+        <div class="postwords">
+        </div>
+      </div>
+    </div>      
+</div>
+<div class="content" id="contact"> 
+    <div align="center">
+      <div id="contact_wrapper" class="ui tertiary form segment">
+        <h3>Want something built? Send me a message</h3>
+        <%= simple_form_for @contact, :html => {:class => 'ui form attached fluid segment' } do |f| %>
+          <div class="field" id="name">
+            <label><label>
+            <%= f.input :name, :required => true %>
+          </div>
+          <div class="field" id="email">
+            <label><label>
+          <%= f.input :email, :required => true %>
+          </div>
+          <div class="field">
+            <label><label>
+          <%= f.input :message, :as => :text, :required => true %>
+          </div>
+          <div>
+            </br>
+            <%= f.button :submit, 'Send message', :class=> "ui blue submit button", :id=>'submit_button' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>
+</div>
+    <section class="column-group gutters">
+        <footer class="clearfix">
+            <div class="ink-grid">
+                <ul class="unstyled inline half-vertical-space">
+                </ul>
+                <p class="note">All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+
+<script>
+$(document).keydown(function(e) {
+    switch(e.which) {
+    case 39: // left
+    window.location = "contact";
+    break;
+    default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+</script>

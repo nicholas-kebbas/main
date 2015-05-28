@@ -158,18 +158,17 @@
                 </div>
             </div>
                 <!--End bottom -->
-                <!--
-                <div class="col-md-4 col-sm-6 portfolio-item" id="item4">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                <div class="col-md-4 col-sm-6 portfolio-item" id="item6">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/frenvu.png" class="img-responsive" alt="">
+                        <img src="assets/zeeba_screenshot.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Frenvu</h4>
+                        <h4>ZeebaVans</h4>
                     </div>
                 </div>
             -->
@@ -456,6 +455,36 @@
         </div>
     </div>
 
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>ZeebaVans</h2>
+                            <p class="item-intro text-muted">PHP, HTML, CSS, Javascript</p>
+                            <img class="img-responsive img-centered" src="assets/salary_cap.png" alt="">
+                            <p>You can view the site at <a href="https://www.zeebavans.com">cap-space.herokuapp.com</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: May 2015</li>
+                                <li>Role: Developer/Designer</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Portfolio Modal 5 -->
      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -507,6 +536,10 @@
         offset: 100
     });
     jQuery('#item5').addClass('hidden2').viewportChecker({
+        classToAdd:'visible animated rotateInUpRight',
+        offset: 100
+    });
+    jQuery('#item6').addClass('hidden2').viewportChecker({
         classToAdd:'visible animated slideInUp',
         offset: 100
     });

@@ -6,6 +6,7 @@ Profile::Application.routes.draw do
     root 'mains#index'
     get '/main/', to: 'mains#index'
     get '/works/', to: 'mains#new'
+    get '/an-efficient-guide-to-ranking-page-one-on-google', to: 'mains#blog'
     
 
   resources :animations
